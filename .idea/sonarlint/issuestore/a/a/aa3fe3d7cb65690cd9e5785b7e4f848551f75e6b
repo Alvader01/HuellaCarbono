@@ -1,0 +1,22 @@
+
+k
+java:S3740"/Provide the parametrized type for this generic.(á¼ÀêJ$65501d61-c212-4b3d-8514-cb9086ac3e6f
+k
+java:S3740*"/Provide the parametrized type for this generic.(»¡­ÂJ$db0dd0c7-352c-48a9-9d1d-f64bca55e582
+k
+java:S37402"/Provide the parametrized type for this generic.(ªì¬¢J$f6a89c52-f62d-4477-8f2c-db51f69f7659
+•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÙÆ¯ËJ$98a2661c-9faa-4240-9250-47708752f75a
+”
+java:S1845'"SRename method "findAll" to prevent any misunderstanding/clash with field "FINDALL".(â¤Ð¦ÿÿÿÿÿJ$120020f1-7423-49f3-9161-cb2117ad68ad
+•
+java:S1845/"YRename method "findByUser" to prevent any misunderstanding/clash with field "FINDBYUSER".(©Ù–ªJ$eb465fb0-056a-4a37-bca5-54cdf8fa1d9c
+o
+java:S1874"3Remove this use of "createQuery"; it is deprecated.(á¼ÀêJ$b54f160b-8ab0-4cd7-a849-d27d649bb2cb
+h
+java:S1874"",Remove this use of "save"; it is deprecated.(â’öÈJ$0f1d5cab-145a-4c2d-8a2d-d1ea1471721b
+o
+java:S1874*"3Remove this use of "createQuery"; it is deprecated.(»¡­ÂJ$7eb13587-036b-44d5-996c-a4a88c795a2d
+o
+java:S18742"3Remove this use of "createQuery"; it is deprecated.(ªì¬¢J$ab39a1a9-60e4-40da-9db7-364c48b9d0a2
+j
+java:S1874=".Remove this use of "delete"; it is deprecated.(˜Íú¥J$218275c8-36b6-4854-83de-82cf75d92bc4

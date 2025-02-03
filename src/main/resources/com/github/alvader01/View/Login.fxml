@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="486.0" prefWidth="764.0" style="-fx-background-color: White;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.alvader01.View.LoginController">
+   <children>
+      <Pane layoutX="465.0" layoutY="49.0" prefHeight="361.0" prefWidth="254.0" style="-fx-background-color: white;">
+         <children>
+            <TextField fx:id="username" layoutX="53.0" layoutY="101.0" prefHeight="35.0" prefWidth="149.0" promptText="Username" />
+            <PasswordField fx:id="password" layoutX="53.0" layoutY="146.0" prefHeight="35.0" prefWidth="149.0" promptText="Password" />
+            <Button fx:id="button" layoutX="44.0" layoutY="213.0" mnemonicParsing="false" onAction="#Login" prefHeight="25.0" prefWidth="166.0" style="-fx-background-radius: 20; -fx-background-color: #4d91ff;" text="Iniciar sesion" />
+            <Text layoutX="70.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Si no estas registrado" />
+            <Line endX="-47.199951171875" layoutX="117.0" layoutY="256.0" startX="-100.0" />
+            <Line endX="-47.199951171875" layoutX="285.0" layoutY="256.0" startX="-100.0" />
+            <Button fx:id="buttonRegister" layoutX="44.0" layoutY="272.0" mnemonicParsing="false" onAction="#changeSceneToRegister" prefHeight="25.0" prefWidth="166.0" style="-fx-background-radius: 20; -fx-background-color: #62666e;" text="Registrarse" />
+         </children>
+      </Pane>
+      <Text layoutX="34.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¡Bienvenido a PlayStack, donde administrar sus juegos es muy sencillo!" wrappingWidth="410.136709690094">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="215.0" fitWidth="215.0" layoutX="34.0" layoutY="42.0">
+         <image>
+            <Image url="@Logo.png" />
+         </image>
+      </ImageView>
+      <Line endX="307.3999938964844" layoutX="127.0" layoutY="266.0" startX="-92.5999984741211" />
+   </children>
+</Pane>

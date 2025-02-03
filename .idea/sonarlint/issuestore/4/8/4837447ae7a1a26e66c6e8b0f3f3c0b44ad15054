@@ -1,0 +1,18 @@
+
+˜
+java:S1488S"\Immediately return this expression instead of assigning it to the temporary variable "user".(ÓÌÆçJ$d5069302-ffdd-475d-a36f-f7814bc2416b
+•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÙÆ¯ËJ$b700841d-d96d-4255-af5e-c04919c2626f
+
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(²§Û J$4ee07475-2dba-4cc3-b845-9338e27d265c
+†
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(å £ÓûÿÿÿÿJ$6bcda0cc-1240-4d82-be7b-0d92901a454c
+
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(³ƒ‘ğJ$f78f26a4-2517-4da7-aeb0-35c59ea83bdb
+t
+java:S1874""3Remove this use of "createQuery"; it is deprecated.(áò±ÛüÿÿÿÿJ$0c6e469e-9877-4e01-b838-90b670bd7757
+j
+java:S18742".Remove this use of "update"; it is deprecated.(±¯ğêJ$adc8ecc5-9fe6-488e-bb12-330e82861eb9
+o
+java:S1874E"3Remove this use of "createQuery"; it is deprecated.(ˆùôÏJ$93b690fb-0b25-43ce-b161-715826bfde83
+o
+java:S1874P"3Remove this use of "createQuery"; it is deprecated.(êÉ©ÂJ$5645eec2-563b-458c-b441-d9c9a6903abf
