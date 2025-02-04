@@ -18,7 +18,7 @@ public class HuellaDAOTest {
         huella.setIdUsuario(usuario);
         huella.setValor(BigDecimal.valueOf(10));
         huella.setUnidad("kg");  // Proporcionamos el valor para el campo unidad
-        huellaDAO.insertaHuella(huella);
+        huellaDAO.addHuella(huella);
 
         // Buscar todas las huellas
         System.out.println("===== BUSCANDO TODAS LAS HUELLAS =====");

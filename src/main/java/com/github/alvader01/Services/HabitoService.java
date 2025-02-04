@@ -11,13 +11,16 @@ import java.util.List;
 public class HabitoService {
     HabitoDAO habitoDAO = new HabitoDAO();
 
-    public boolean addHabito(Habito habito) {
-        habitoDAO.insertarHabito(habito);
+    public boolean addHabit(Habito habito) {
+        if (habitoDAO.habitExists(habito.getIdUsuario().getId(), habito.getIdActividad().getId())) {
+            return false;
+        }
+        habitoDAO.addHabit(habito);
         return true;
     }
 
-    public Actividad getActividadById(Habito habito) {
-        return habitoDAO.findActividadById(habito);
+    public Actividad getActivityById(Habito habito) {
+        return habitoDAO.findActivityById(habito);
     }
 
     public List<Habito> findByUser(Usuario user) {
@@ -31,8 +34,17 @@ public class HabitoService {
 
     }
 
-    public boolean deleteHabito(Habito habito) {
+    public boolean deleteHabit(Habito habito) {
         habitoDAO.delete(habito);
         return true;
     }
+    public boolean updateHabit(Habito habito) {
+        habitoDAO.update(habito);
+        return true;
+    }
+    public boolean checkHabitExists(Actividad activity, Usuario user) {
+        HabitoDAO habitDAO = new HabitoDAO();
+        return habitDAO.habitExists(user.getId(), activity.getId());
+    }
+
 }

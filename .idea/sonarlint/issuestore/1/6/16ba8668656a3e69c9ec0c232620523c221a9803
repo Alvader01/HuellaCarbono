@@ -1,12 +1,12 @@
 
-^
-java:S4973*"<Strings and Boxed types should be compared using "equals()".(óû²„üÿÿÿÿ8ˆêáâÌ2
-•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(“îÓ»J$c4f99d43-5301-4ffb-b068-3713a6a04412
-r	java:S106"+Replace this use of System.out by a logger.(úÑš¯üÿÿÿÿ8üú±âÌ2J$6ef8788d-c64d-4f22-9349-948a6aade66f
-m	java:S106"+Replace this use of System.out by a logger.(Æõü8ıú±âÌ2J$d80bb8e4-106f-4803-87af-8c2f89153cb4
-r	java:S106"+Replace this use of System.out by a logger.(ç¸äœûÿÿÿÿ8şú±âÌ2J$dea0d6b9-1ec5-47b9-ba9d-a83e788d40c6
-m	java:S106"+Replace this use of System.out by a logger.(®®Ì¥8şú±âÌ2J$bf4e6c96-7479-442e-a175-0df31d6b6040
-r	java:S106""+Replace this use of System.out by a logger.(ç¸äœûÿÿÿÿ8şú±âÌ2J$e7e748fe-b46f-4a62-869d-f78c82ed6e52
-r	java:S106&"+Replace this use of System.out by a logger.(ñ“¯úşÿÿÿÿ8şú±âÌ2J$dd63712e-87ce-43a1-8891-7ada77a9f60e
-r	java:S106."+Replace this use of System.out by a logger.(ßÜÓºûÿÿÿÿ8ÿú±âÌ2J$be53da8f-7fcc-445a-9a06-5972f7fd9999
-ƒ	java:S1252"<This block of commented-out lines of code should be removed.(„äİ›ûÿÿÿÿ8û±âÌ2J$e80f5f50-35fa-4e4c-939a-cf44eb852a04
+„
+java:S4973*"<Strings and Boxed types should be compared using "equals()".(óû²„üÿÿÿÿ8ˆêáâÌ2J$e26bc45a-2020-42e2-87d2-694cb5390032
+•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(“îÓ»J$5049c49a-a7ea-4e45-8433-dae42ad3539e
+r	java:S106"+Replace this use of System.out by a logger.(úÑš¯üÿÿÿÿ8üú±âÌ2J$3c71b456-424b-4340-8c38-9927ab59cb85
+m	java:S106"+Replace this use of System.out by a logger.(Æõü8ıú±âÌ2J$2cd33df6-7370-4cff-a8e4-e8662d8031ee
+r	java:S106"+Replace this use of System.out by a logger.(ç¸äœûÿÿÿÿ8şú±âÌ2J$ff447719-5c4b-4add-8662-664ed59c6c16
+m	java:S106"+Replace this use of System.out by a logger.(®®Ì¥8şú±âÌ2J$8ddfc2f4-e15e-4853-b681-d3d690a6e107
+r	java:S106""+Replace this use of System.out by a logger.(ç¸äœûÿÿÿÿ8şú±âÌ2J$364c1571-c7c6-467d-9d36-246368dc4ecd
+r	java:S106&"+Replace this use of System.out by a logger.(ñ“¯úşÿÿÿÿ8şú±âÌ2J$bc54f0e2-d8a0-4022-baae-51e3cd7940a6
+r	java:S106."+Replace this use of System.out by a logger.(ßÜÓºûÿÿÿÿ8ÿú±âÌ2J$32277c0f-6f45-447b-b303-5f918bb235d3
+ƒ	java:S1252"<This block of commented-out lines of code should be removed.(„äİ›ûÿÿÿÿ8û±âÌ2J$73824a43-c78f-4a33-98f0-581ac64e2ed5

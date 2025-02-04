@@ -1,10 +1,6 @@
 
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-i
-9src/main/java/com/github/alvader01/PrimaryController.java,7\e\7efb3a454d29adb0bd020d429dc162745780331f
-k
-;src/main/java/com/github/alvader01/SecondaryController.java,2\1\21f24757dc3ff9429109a9b8a49248b41c34166d
 N
 src/main/java/module-info.java,1\c\1c89a5491fbfda3fb050196d6a239f20200296e7
 [
@@ -58,6 +54,22 @@ o
 j
 :src/main/java/com/github/alvader01/View/AppController.java,b\6\b65270a48320161d2998ebce8be8a0096f3bc7d7
 n
->src/main/java/com/github/alvader01/View/PrimaryController.java,9\d\9dd173222061c498ded1de20f3da99d0078d8613
-n
 >src/main/java/com/github/alvader01/View/WelcomeController.java,7\4\74510cdada207c5f3e4d4a34649195874f04fec2
+l
+<src/main/java/com/github/alvader01/View/LoginController.java,d\b\db9b51c3ce90988b51c7fa66e2afcab1b364db38
+o
+?src/main/java/com/github/alvader01/View/MainPageController.java,6\2\62cb30727daa905eae626cee0abdccacbcd723c3
+o
+?src/main/java/com/github/alvader01/View/RegisterController.java,3\0\30a69ba9c3cfc94c819a9a0304a08d997e4af9ab
+n
+>src/main/java/com/github/alvader01/View/ProfileController.java,1\f\1ff4c8c88773030e5ddee584555983314320cb7c
+o
+?src/main/java/com/github/alvader01/View/AddHabitController.java,9\c\9c9c4a763d931015263d0be21e328c3adcc8e02c
+e
+5src/main/java/com/github/alvader01/View/MainView.java,0\d\0d651a1704f6025453b793f3b8343a7c867842cc
+i
+9src/main/java/com/github/alvader01/View/AddFootprint.java,6\6\6664768c17f2fcbc71aea63f1024c5c9386f85f9
+g
+7src/main/java/com/github/alvader01/View/Controller.java,4\f\4f703647c5096764d7c2341576b8e9d1a9bf30b9
+m
+=src/main/java/com/github/alvader01/View/ExportController.java,b\7\b7732132a362eff7577dd4f9af1420565e7c3876

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.alvader01.View.AddHabitController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="729.0" layoutX="-7.0" layoutY="-3.0" stroke="BLACK" strokeType="INSIDE" width="1298.0">
+         <fill>
+            <LinearGradient endX="0.1818181709809737" endY="1.0" startX="0.3219697082584555" startY="0.10606064940943863">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5148147940635681" green="0.7654938101768494" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color green="1.0" blue="0.03333333507180214" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fitHeight="154.0" fitWidth="256.0" layoutX="522.0" layoutY="509.0">
+         <image>
+            <Image url="@Images/logo%20huella.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="507.0" layoutY="682.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pequeños cambios generan grandes impactos. Únete al cambio." textAlignment="CENTER" wrappingWidth="293.9779357910156">
+         <font>
+            <Font name="Roboto" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="450.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Con cada acción, hacemos la diferencia." textAlignment="CENTER" wrappingWidth="412.7705078125">
+         <font>
+            <Font name="Roboto" size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="addHabitButton" layoutX="521.0" layoutY="454.0" mnemonicParsing="false" onAction="#saveHabit" prefHeight="34.0" prefWidth="263.0" text="Añadir habito">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Roboto" size="16.0" />
+         </font>
+      </Button>
+      <Text layoutX="452.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: 'Arial'; -fx-font-size: 16px; -fx-fill: #333333;" text="Añade tu habito rellenando los siguientes campos " textAlignment="CENTER" wrappingWidth="405.3686294555662" />
+      <Text fontSmoothingType="LCD" layoutX="450.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  Huella Verde " textAlignment="CENTER" wrappingWidth="402.63739013671875">
+         <font>
+            <Font name="Roboto" size="34.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="backButton" fitHeight="50.0" fitWidth="55.0" layoutX="14.0" layoutY="12.0" onMouseClicked="#changeSceneToMainPage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/volver-flecha.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="activityComboBox" layoutX="477.0" layoutY="173.0" prefHeight="33.0" prefWidth="351.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ComboBox>
+      <DatePicker fx:id="habitDatePicker" layoutX="477.0" layoutY="397.0" prefHeight="33.0" prefWidth="351.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </DatePicker>
+      <Text layoutX="477.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Actividad">
+         <font>
+            <Font name="Roboto" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="477.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ultima vez realizado">
+         <font>
+            <Font name="Roboto" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="475.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo">
+         <font>
+            <Font name="Roboto" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="478.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Frecuencia">
+         <font>
+            <Font name="Roboto" size="18.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="typeComboBox" layoutX="477.0" layoutY="246.0" prefHeight="33.0" prefWidth="351.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ComboBox>
+      <TextField fx:id="frequencyTextField" layoutX="477.0" layoutY="323.0" prefHeight="33.0" prefWidth="351.0" />
+   </children>
+</AnchorPane>

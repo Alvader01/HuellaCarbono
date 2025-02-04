@@ -5,6 +5,7 @@ import org.hibernate.annotations.ColumnDefault;
 
 import java.math.BigDecimal;
 import java.time.Instant;
+import java.time.LocalDate;
 
 @Entity
 @Table(name = "huella", schema = "huellacarbono")
@@ -30,7 +31,7 @@ public class Huella {
 
     @ColumnDefault("current_timestamp()")
     @Column(name = "fecha")
-    private Instant fecha;
+    private LocalDate fecha;
 
     public Integer getId() {
         return id;
@@ -72,12 +73,23 @@ public class Huella {
         this.unidad = unidad;
     }
 
-    public Instant getFecha() {
+    public LocalDate getFecha() {
         return fecha;
     }
 
-    public void setFecha(Instant fecha) {
+    public void setFecha(LocalDate fecha) {
         this.fecha = fecha;
+    }
+
+    @Override
+    public String toString() {
+        return "Huella{" +
+                "fecha=" + fecha +
+                ", id=" + id +
+                ", idUsuario=" + idUsuario +
+                ", valor=" + valor +
+                ", unidad='" + unidad + '\'' +
+                '}';
     }
 
 }

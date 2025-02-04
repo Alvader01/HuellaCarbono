@@ -11,23 +11,35 @@ import org.hibernate.query.Query;
 import java.util.List;
 
 public class HabitoDAO {
-
     public static final String FINDALL = "FROM Habito";
     public static final String FINDBYUSER = "FROM Habito WHERE idUsuario.id = :id";
-    public static final String FINDACTIVIDADNAME  = "FROM Actividad WHERE id = :idActividad";
+    public static final String FINDACTIVITYNAME = "FROM Actividad WHERE id = :idActividad";
+    public static final String CHECK_DUPLICATE = "FROM Habito WHERE idUsuario.id = :idUsuario AND idActividad.id = :idActividad";
 
 
-    public Actividad findActividadById(Habito habito) {
+    public Actividad findActivityById(Habito habito) {
         Connection connection = Connection.getInstance();
         Session session = connection.getSession();
-        Query query = session.createQuery(FINDACTIVIDADNAME);
+        Query query = session.createQuery(FINDACTIVITYNAME);
         query.setParameter("idActividad", habito.getIdActividad().getId());
         Actividad actividadEncontrada = (Actividad) query.getSingleResult();
         session.close();
         return actividadEncontrada;
     }
 
-    public void insertarHabito(Habito habito){
+    public boolean habitExists(int idUsuario, int idActividad) {
+        Connection connection = Connection.getInstance();
+        Session session = connection.getSession();
+        Query query = session.createQuery(CHECK_DUPLICATE);
+        query.setParameter("idUsuario", idUsuario);
+        query.setParameter("idActividad", idActividad);
+        List<Habito> results = query.getResultList();
+        session.close();
+        return !results.isEmpty();
+    }
+
+
+    public void addHabit(Habito habito) {
         Connection connection = Connection.getInstance();
         Session session = connection.getSession();
         session.beginTransaction();
@@ -36,7 +48,18 @@ public class HabitoDAO {
         session.close();
     }
 
-    public List<Habito> findAll(){
+
+    public void update(Habito habito) {
+        Connection connection = Connection.getInstance();
+        Session session = connection.getSession();
+        session.beginTransaction();
+        session.update(habito);
+        session.getTransaction().commit();
+        session.close();
+    }
+
+
+    public List<Habito> findAll() {
         Connection connection = Connection.getInstance();
         Session session = connection.getSession();
         Query query = session.createQuery(FINDALL);
@@ -44,7 +67,9 @@ public class HabitoDAO {
         session.close();
         return habitos;
     }
-    public List<Habito> findByUser(Usuario user){
+
+
+    public List<Habito> findByUser(Usuario user) {
         Connection connection = Connection.getInstance();
         Session session = connection.getSession();
         Query query = session.createQuery(FINDBYUSER);
@@ -54,7 +79,8 @@ public class HabitoDAO {
         return habitos;
     }
 
-    public boolean delete(Habito habito){
+
+    public boolean delete(Habito habito) {
         Connection connection = Connection.getInstance();
         Session session = connection.getSession();
         session.beginTransaction();

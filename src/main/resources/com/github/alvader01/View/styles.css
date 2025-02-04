@@ -1,0 +1,196 @@
+#iniciarSesion {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+    -fx-font-weight: bold;
+    -fx-border-radius: 10;
+    -fx-border-color: transparent;
+    -fx-border-width: 2;
+    -fx-padding: 5;
+    -fx-cursor: hand;
+}
+
+#iniciarSesion:hover {
+    -fx-background-color: #3e8e41;
+    -fx-border-color: #ffffff;
+}
+
+#registrarse {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+    -fx-font-weight: bold;
+    -fx-border-radius: 10;
+    -fx-border-color: transparent;
+    -fx-border-width: 2;
+    -fx-padding: 5;
+    -fx-cursor: hand;
+}
+
+#registrarse:hover {
+    -fx-background-color: #3e8e41;
+    -fx-border-color: #ffffff;
+}
+#btnLogin {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+    -fx-font-weight: bold;
+    -fx-border-radius: 10;
+    -fx-border-color: transparent;
+    -fx-border-width: 2;
+    -fx-padding: 5;
+    -fx-cursor: hand;
+}
+
+#btnLogin:hover {
+    -fx-background-color: #3e8e41;
+    -fx-border-color: #ffffff;
+}
+
+#btnRegister {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+    -fx-font-weight: bold;
+    -fx-border-radius: 10;
+    -fx-border-color: transparent;
+    -fx-border-width: 2;
+    -fx-padding: 5;
+    -fx-cursor: hand;
+}
+
+#btnRegister:hover {
+    -fx-background-color: #3e8e41;
+    -fx-border-color: #ffffff;
+}
+#buttonAddFingerprint {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+    -fx-font-weight: bold;
+    -fx-border-radius: 10;
+    -fx-border-color: transparent;
+    -fx-border-width: 2;
+    -fx-padding: 5;
+    -fx-cursor: hand;
+}
+
+#buttonAddFingerprint:hover {
+    -fx-background-color: #3e8e41;
+    -fx-border-color: #ffffff;
+}
+#buttonAddHabit {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+    -fx-font-weight: bold;
+    -fx-border-radius: 10;
+    -fx-border-color: transparent;
+    -fx-border-width: 2;
+    -fx-padding: 5;
+    -fx-cursor: hand;
+}
+
+#buttonAddHabit:hover {
+    -fx-background-color: #3e8e41;
+    -fx-border-color: #ffffff;
+}
+#buttonRecommendations {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+    -fx-font-weight: bold;
+    -fx-border-radius: 10;
+    -fx-border-color: transparent;
+    -fx-border-width: 2;
+    -fx-padding: 5;
+    -fx-cursor: hand;
+}
+
+#buttonRecommendations:hover {
+    -fx-background-color: #3e8e41;
+    -fx-border-color: #ffffff;
+}
+#registerButton {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+    -fx-font-weight: bold;
+    -fx-border-radius: 10;
+    -fx-border-color: transparent;
+    -fx-border-width: 2;
+    -fx-padding: 5;
+    -fx-cursor: hand;
+}
+
+#registerButton:hover {
+    -fx-background-color: #3e8e41;
+    -fx-border-color: #ffffff;
+}
+#loginButton {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+    -fx-font-weight: bold;
+    -fx-border-radius: 10;
+    -fx-border-color: transparent;
+    -fx-border-width: 2;
+    -fx-padding: 5;
+    -fx-cursor: hand;
+}
+
+#loginButton:hover {
+    -fx-background-color: #3e8e41;
+    -fx-border-color: #ffffff;
+}
+#updateButton {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+    -fx-font-weight: bold;
+    -fx-border-radius: 10;
+    -fx-border-color: transparent;
+    -fx-border-width: 2;
+    -fx-padding: 5;
+    -fx-cursor: hand;
+}
+
+#updateButton:hover {
+    -fx-background-color: #3e8e41;
+    -fx-border-color: #ffffff;
+}
+#addHabitButton {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+    -fx-font-weight: bold;
+    -fx-border-radius: 10;
+    -fx-border-color: transparent;
+    -fx-border-width: 2;
+    -fx-padding: 5;
+    -fx-cursor: hand;
+}
+
+#addHabitButton:hover {
+    -fx-background-color: #3e8e41;
+    -fx-border-color: #ffffff;
+}
+
+#btnSaveFootprint {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+    -fx-font-weight: bold;
+    -fx-border-radius: 10;
+    -fx-border-color: transparent;
+    -fx-border-width: 2;
+    -fx-padding: 5;
+    -fx-cursor: hand;
+}
+
+#btnSaveFootprint:hover {
+    -fx-background-color: #3e8e41;
+    -fx-border-color: #ffffff;
+}
+

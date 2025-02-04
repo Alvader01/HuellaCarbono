@@ -11,7 +11,7 @@ public class Session {
     private Session() {
     }
 
-    public static Session getInstancia() {
+    public static Session getInstance() {
         if (_instance == null) {
             _instance = new Session();
             _instance.logIn(userLoged);
@@ -23,7 +23,7 @@ public class Session {
         userLoged = user;
     }
 
-    public Usuario getUsuarioIniciado() {
+    public Usuario getUserLoged() {
         return userLoged;
     }
 

@@ -1,6 +1,9 @@
 
-f	java:S117A"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ôí‡
-n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(–Á›n
-p	java:S116"VRename this field "contraseÃ±a" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëôŒ¦ÿÿÿÿÿ
-c	java:S100="NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ú—’
-c	java:S100A"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ôí‡
+Œ	java:S117A"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ôí‡J$38db1703-4f02-4181-9754-11357834370c
+“	java:S117\"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–ÿĞ¬8±‘¥äÌ2J$5cb9a371-5309-47ba-aed5-7212145cdb84
+˜	java:S117d"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’¾Èªøÿÿÿÿ8±‘¥äÌ2J$371bcadf-55bf-43a9-87c5-5263827fa8e8
+“	java:S117i"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ì¬¢ä8±‘¥äÌ2J$9ad60bab-4824-4ea3-9fae-948cc600d7b3
+”	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(–Á›nJ$061db397-42cb-4b59-8c65-41df35ef921b
+–	java:S116"VRename this field "contraseÃ±a" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëôŒ¦ÿÿÿÿÿJ$3902b643-5735-42d3-b83e-5e40543bb101
+‰	java:S100="NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ú—’J$0e331e12-6bb2-470f-9c89-9591faf96920
+‰	java:S100A"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ôí‡J$7f10360f-fe79-4d90-b0af-aada44c082a7

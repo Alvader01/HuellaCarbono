@@ -7,12 +7,14 @@ import com.github.alvader01.Entities.Usuario;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
 
+import java.time.LocalDate;
 import java.util.List;
 
 public class HuellaDAO {
 
     private static final String FINDALL = "FROM Huella";
     private static final String FINDBYUSERID = "FROM Huella WHERE idUsuario.id = :id";
+    private static final String CHECK_DUPLICATE = "FROM Huella WHERE idUsuario.id = :idUsuario AND idActividad.id = :idActividad AND fecha = :fecha";
 
     public void delete(Huella huella) {
         Connection connection = Connection.getInstance();
@@ -33,7 +35,7 @@ public class HuellaDAO {
     }
 
 
-    public void insertaHuella(Huella huella) {
+    public void addHuella(Huella huella) {
         Connection connection = Connection.getInstance();
         Session session = connection.getSession();
         session.beginTransaction();
@@ -49,6 +51,17 @@ public class HuellaDAO {
         List<Huella> huellas = query.getResultList();
         session.close();
         return huellas;
+    }
+    public boolean footprintExists(int idUsuario, int idActividad, LocalDate fecha) {
+        Connection connection = Connection.getInstance();
+        Session session = connection.getSession();
+        Query query = session.createQuery(CHECK_DUPLICATE);
+        query.setParameter("idUsuario", idUsuario);
+        query.setParameter("idActividad", idActividad);
+        query.setParameter("fecha", fecha);
+        List<Huella> results = query.getResultList();
+        session.close();
+        return !results.isEmpty();
     }
 
     public List<Huella> findall() {

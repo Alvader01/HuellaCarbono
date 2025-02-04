@@ -9,12 +9,12 @@ import java.util.List;
 public class RecomendacionService {
     RecomendacionDAO recomendacionDAO = new RecomendacionDAO();
 
-    public List<Recomendacion> findRecomendacionesForUser(List <Habito> habitos, List<Recomendacion> recomendaciones) {
+    public List<Recomendacion> findRecomendationsForUser(List <Habito> habitos, List<Recomendacion> recomendaciones) {
         if (habitos == null) {
             return null;
         } else {
             for (Habito habito : habitos) {
-                recomendaciones.addAll(recomendacionDAO.findRecomendacionesForUser(habito));
+                recomendaciones.addAll(recomendacionDAO.findRecomendationsForUser(habito));
             }
             return recomendaciones;
         }

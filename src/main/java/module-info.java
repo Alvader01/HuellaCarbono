@@ -5,8 +5,10 @@ module com.github.alvader01 {
     requires jakarta.persistence;
     requires java.naming;
     requires java.sql;
+    requires java.desktop;
+    requires org.apache.pdfbox;
 
-    opens com.github.alvader01.Entities to org.hibernate.orm.core;
+    opens com.github.alvader01.Entities to org.hibernate.orm.core, javafx.base;
     opens com.github.alvader01 to javafx.fxml;
     exports com.github.alvader01;
     exports com.github.alvader01.View;

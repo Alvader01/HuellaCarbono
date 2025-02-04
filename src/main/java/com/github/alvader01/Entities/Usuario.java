@@ -89,5 +89,34 @@ public class Usuario {
     public void setHuellas(Set<Huella> huellas) {
         this.huellas = huellas;
     }
+    public Usuario(String nombre, String email, String contraseña, Instant fechaRegistro) {
+        this.nombre = nombre;
+        this.email = email;
+        this.contraseña = contraseña;
+        this.fechaRegistro = fechaRegistro;
+    }
+    public Usuario() {}
+
+    public Usuario(String email, String contraseña) {
+        this.email = email;
+        this.contraseña = contraseña;
+    }
+
+    public Usuario(String nombre, String contraseña, String email) {
+        this.nombre = nombre;
+        this.contraseña = contraseña;
+        this.email = email;
+    }
+
+    @Override
+    public String toString() {
+        return "Usuario{" +
+                "id=" + id +
+                ", nombre='" + nombre + '\'' +
+                ", email='" + email + '\'' +
+                ", contraseña='" + contraseña + '\'' +
+                ", fechaRegistro=" + fechaRegistro +
+                '}';
+    }
 
 }

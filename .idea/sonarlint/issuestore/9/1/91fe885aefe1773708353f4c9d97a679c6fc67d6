@@ -1,4 +1,6 @@
 
-š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Š¥´ùøÿÿÿÿJ$3dc07a2d-dc5d-40ab-855e-96de277724c8
+š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Š¥´ùøÿÿÿÿJ$b02762ab-76b7-4fea-930c-3c1d666545dd
 w
-java:S1854";Remove this useless assignment to local variable "habitos".(¶•ßóJ$c9d2dcd8-d720-42bb-8783-86a2d57ce6fa
+java:S1854";Remove this useless assignment to local variable "habitos".(¶•ßóJ$4038b568-b046-40b7-ab89-29b63c85a6b3
+n
+java:S1168 "+Return an empty collection instead of null.(¥¹ï8öç¸íÌ2J$5d08ff42-246d-4edc-ae37-801eaac93b36

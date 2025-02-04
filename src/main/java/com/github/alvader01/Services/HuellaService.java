@@ -1,10 +1,12 @@
 package com.github.alvader01.Services;
 
 import com.github.alvader01.DAO.HuellaDAO;
+import com.github.alvader01.Entities.Actividad;
 import com.github.alvader01.Entities.Huella;
 import com.github.alvader01.Entities.Usuario;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.util.List;
 
 public class HuellaService {
@@ -24,7 +26,7 @@ public class HuellaService {
             return false;
         }
         try {
-            huellaDAO.insertaHuella(huella);
+            huellaDAO.addHuella(huella);
             return true;
         } catch (Exception e) {
             System.out.println("Error al insertar la huella en la base de datos: " + e.getMessage());
@@ -57,6 +59,9 @@ public class HuellaService {
             System.err.println("Error actualizando la huella: " + e.getMessage());
         }
         return aux;
+    }
+    public boolean checkFootprintExists(Actividad actividad, Usuario usuario, LocalDate fecha) {
+        return huellaDAO.footprintExists(usuario.getId(), actividad.getId(), fecha);
     }
 
 }

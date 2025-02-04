@@ -1,10 +1,10 @@
 
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(á†÷”ÿÿÿÿÿ8ÆçœâÌ2J$55da48b7-7c92-44ba-8100-b2fc02460471
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(á†÷”ÿÿÿÿÿ8ÆçœâÌ2J$e4291322-391b-4598-b99a-47e0bee303e6
 —
-java:S3008"TRename this field "_instance" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÊÚŒ•8¯¸œâÌ2J$3ff43d33-7e52-43f0-b003-f8fd772d327a
+java:S3008"TRename this field "_instance" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÊÚŒ•8¯¸œâÌ2J$277e9b00-1fca-4cc9-ba23-29ab53d9b005
 Ü
-java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(äì£Ä8°¸œâÌ2J$6d40f093-f43c-473e-b013-dbab9c563e6e
+java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(äì£Ä8°¸œâÌ2J$55a37e97-1274-459e-9f60-64bb1fa4bd52
 y
-java:S2696"6Make the enclosing method "static" or remove this set.(“àÃ—8´¸œâÌ2J$951c7ebe-12a3-418a-ab29-500eae0aaeb9
+java:S2696"6Make the enclosing method "static" or remove this set.(“àÃ—8´¸œâÌ2J$2cc56f3e-a869-463d-b359-aa17cd8cd698
 y
-java:S2696"6Make the enclosing method "static" or remove this set.(•û§†8µ¸œâÌ2J$185b0830-dd6a-4f8f-bc56-23c78a469585
+java:S2696"6Make the enclosing method "static" or remove this set.(•û§†8µ¸œâÌ2J$91bd5f6c-fa5e-43b5-a4ba-f94e68babd28

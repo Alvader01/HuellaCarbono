@@ -2,7 +2,9 @@ package com.github.alvader01.DAO;
 
 import com.github.alvader01.Connection.Connection;
 import com.github.alvader01.Entities.Actividad;
+import com.github.alvader01.Entities.Categoria;
 import com.github.alvader01.Entities.Huella;
+import com.github.alvader01.Entities.Recomendacion;
 import jakarta.persistence.Query;
 import org.hibernate.Session;
 
@@ -11,9 +13,30 @@ import java.util.List;
 public class ActividadDAO {
 
     private final static String FINDALL = "FROM Actividad";
-    private final static String FINDACTIVIDADBYNAME = "FROM Actividad WHERE nombre = :name";
-    private final static String FINDUNIDADBYACTIVIDAD = "SELECT c.unidad FROM Categoria c JOIN Actividad a ON a.idCategoria = c WHERE a.idCategoria.id = :idCategoria";
+    private final static String FINDACTIVITYBYNAME = "FROM Actividad WHERE nombre = :name";
+    private final static String FINDUNITBYACTIVITY = "SELECT c.unidad FROM Categoria c JOIN Actividad a ON a.idCategoria = c WHERE a.idCategoria.id = :idCategoria";
     private final static String FINDBYID = "FROM Actividad WHERE id = :id";
+    private final static String FINDRECOMMENDATIONBYID = "SELECT r FROM Recomendacion r WHERE r.idCategoria = :categoria";
+
+
+    public List<Recomendacion> findRecommendationByActivityId(int activityId) {
+        Connection connection = Connection.getInstance();
+        Session session = connection.getSession();
+
+        // Primero obtiene la actividad
+        Actividad actividad = session.get(Actividad.class, activityId);
+
+        // Luego obtiene la categoría de la actividad
+        Categoria categoria = actividad.getIdCategoria();
+
+        // Ahora obtiene las recomendaciones asociadas a esa categoría
+        Query query = session.createQuery(FINDRECOMMENDATIONBYID);
+        query.setParameter("categoria", categoria);  // Pasar el objeto Categoria, no el id
+        List<Recomendacion> recomendaciones = query.getResultList();
+
+        session.close();
+        return recomendaciones;
+    }
 
     public Actividad findByID(Huella huella) {
         Connection connection = Connection.getInstance();
@@ -34,19 +57,19 @@ public class ActividadDAO {
         return actividades;
     }
 
-    public Actividad findActividadByName(Actividad actividad) {
+    public Actividad findActivityByName(Actividad actividad) {
         Connection connection = Connection.getInstance();
         Session session = connection.getSession();
-        Query query = session.createQuery(FINDACTIVIDADBYNAME);
+        Query query = session.createQuery(FINDACTIVITYBYNAME);
         query.setParameter("name", actividad.getNombre());
         Actividad actividadEncontrada = (Actividad) query.getSingleResult();
         return actividadEncontrada;
     }
 
-    public String findUnidadByActividad(Actividad actividad) {
+    public String findUnitByActivity(Actividad actividad) {
         Connection connection = Connection.getInstance();
         Session session = connection.getSession();
-        Query query = session.createQuery(FINDUNIDADBYACTIVIDAD);
+        Query query = session.createQuery(FINDUNITBYACTIVITY);
         query.setParameter("idCategoria", actividad.getIdCategoria().getId());
         List<String> resultados = query.getResultList();
         String unidad = null;

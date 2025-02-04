@@ -1,6 +1,7 @@
 package com.github.alvader01.Entities;
 
 import jakarta.persistence.*;
+import org.hibernate.Hibernate;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
@@ -63,6 +64,20 @@ public class Actividad {
 
     public void setHuellas(Set<com.github.alvader01.Entities.Huella> huellas) {
         this.huellas = huellas;
+    }
+    @Override
+    public String toString() {
+        if (idCategoria != null && idCategoria.getId() == null) {
+            Hibernate.initialize(idCategoria);
+        }
+
+        return "Actividad{" +
+                "id=" + id +
+                ", nombre='" + nombre + '\'' +
+                ", idCategoria=" + (idCategoria != null ? idCategoria.getId() : "Sin categoría") +
+                ", habitos=" + habitos +
+                ", huellas=" + huellas +
+                '}';
     }
 
 

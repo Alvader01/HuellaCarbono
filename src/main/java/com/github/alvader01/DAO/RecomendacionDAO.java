@@ -11,13 +11,13 @@ import java.util.List;
 
 public class RecomendacionDAO{
 
-    private static final String FINDRECOMENDACIONESFORUSER = "SELECT r FROM Recomendacion r WHERE r.idCategoria.id = :idCategoria";
+    private static final String FINDRECOMENDATIONSFORUSER = "SELECT r FROM Recomendacion r WHERE r.idCategoria.id = :idCategoria";
 
 
-    public List <Recomendacion> findRecomendacionesForUser(Habito habito) {
+    public List <Recomendacion> findRecomendationsForUser(Habito habito) {
         Connection connection = Connection.getInstance();
         Session session = connection.getSession();
-        Query query = session.createQuery(FINDRECOMENDACIONESFORUSER);
+        Query query = session.createQuery(FINDRECOMENDATIONSFORUSER);
         query.setParameter("idCategoria", habito.getIdActividad().getIdCategoria().getId());
         List<Recomendacion> recomendaciones = query.getResultList();
         session.close();

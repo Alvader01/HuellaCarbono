@@ -2,7 +2,8 @@ package com.github.alvader01.Entities;
 
 import jakarta.persistence.*;
 
-import java.time.Instant;
+
+import java.time.LocalDate;
 
 @Entity
 @Table(name = "habito", schema = "huellacarbono")
@@ -28,7 +29,7 @@ public class Habito {
     private String tipo;
 
     @Column(name = "ultima_fecha")
-    private Instant ultimaFecha;
+    private LocalDate ultimaFecha;
 
     public HabitoId getId() {
         return id;
@@ -70,11 +71,11 @@ public class Habito {
         this.tipo = tipo;
     }
 
-    public Instant getUltimaFecha() {
+    public LocalDate getUltimaFecha() {
         return ultimaFecha;
     }
 
-    public void setUltimaFecha(Instant ultimaFecha) {
+    public void setUltimaFecha(LocalDate ultimaFecha) {
         this.ultimaFecha = ultimaFecha;
     }
 

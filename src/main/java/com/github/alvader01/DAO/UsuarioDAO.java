@@ -20,9 +20,7 @@ public class UsuarioDAO {
         Connection connection = Connection.getInstance();
         Session session = connection.getSession();
         session.beginTransaction();
-
         user.setContraseña(PasswordHasher.hashPassword(user.getContraseña()));
-
         session.persist(user);
         session.getTransaction().commit();
         session.close();
@@ -42,11 +40,9 @@ public class UsuarioDAO {
         Connection connection = Connection.getInstance();
         Session session = connection.getSession();
         session.beginTransaction();
-
         if (user.getContraseña() != null) {
             user.setContraseña(PasswordHasher.hashPassword(user.getContraseña()));
         }
-
         session.update(user);
         session.getTransaction().commit();
         session.close();

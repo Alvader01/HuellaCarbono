@@ -1,5 +1,5 @@
 
-b	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(ËŸĞ´8¶Ï›âÌ2
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(á†÷”ÿÿÿÿÿ8ºÏ›âÌ2
-µ
-java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(óõØs8ÄÏ›âÌ2
+ˆ	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(ËŸĞ´8¶Ï›âÌ2J$aa22898b-b665-4595-a3f1-03b74944e792
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(á†÷”ÿÿÿÿÿ8ºÏ›âÌ2J$df77cc39-1234-4043-9a0d-d216855f6666
+Û
+java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(óõØs8ÄÏ›âÌ2J$b3114969-5bb6-4815-b158-e109b404f6d2

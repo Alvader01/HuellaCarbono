@@ -76,5 +76,11 @@ public class Categoria {
     public void setRecomendacions(Set<com.github.alvader01.Entities.Recomendacion> recomendacions) {
         this.recomendacions = recomendacions;
     }
+    @Override
+    public String toString() {
+        return "Categoria{" +
+                "id=" + id +
+                '}';
+    }
 
 }
