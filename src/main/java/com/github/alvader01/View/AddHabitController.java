@@ -22,7 +22,7 @@ public class AddHabitController extends Controller implements Initializable {
     @FXML
     private ComboBox<Actividad> activityComboBox;
     @FXML
-    private TextField frequencyTextField; // Aquí es donde se ingresa la frecuencia
+    private TextField frequencyTextField;
     @FXML
     private Button addHabitButton;
     @FXML
@@ -76,7 +76,7 @@ public class AddHabitController extends Controller implements Initializable {
                 super.updateItem(date, empty);
                 if (date.isAfter(LocalDate.now())) {
                     setDisable(true);
-                    setStyle("-fx-background-color: #ffc0cb;");
+                    setStyle("-fx-background-color: #d3d3d3;");
                 }
             }
         };

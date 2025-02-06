@@ -22,16 +22,12 @@ public class ActividadDAO {
     public List<Recomendacion> findRecommendationByActivityId(int activityId) {
         Connection connection = Connection.getInstance();
         Session session = connection.getSession();
-
-        // Primero obtiene la actividad
         Actividad actividad = session.get(Actividad.class, activityId);
 
-        // Luego obtiene la categoría de la actividad
         Categoria categoria = actividad.getIdCategoria();
 
-        // Ahora obtiene las recomendaciones asociadas a esa categoría
         Query query = session.createQuery(FINDRECOMMENDATIONBYID);
-        query.setParameter("categoria", categoria);  // Pasar el objeto Categoria, no el id
+        query.setParameter("categoria", categoria);
         List<Recomendacion> recomendaciones = query.getResultList();
 
         session.close();

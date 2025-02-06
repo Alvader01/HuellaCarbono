@@ -17,26 +17,23 @@ public class HuellaDAOTest {
         Huella huella = new Huella();
         huella.setIdUsuario(usuario);
         huella.setValor(BigDecimal.valueOf(10));
-        huella.setUnidad("kg");  // Proporcionamos el valor para el campo unidad
+        huella.setUnidad("kg");
         huellaDAO.addHuella(huella);
 
-        // Buscar todas las huellas
         System.out.println("===== BUSCANDO TODAS LAS HUELLAS =====");
         List<Huella> huellas = huellaDAO.findall();
         for (Huella h : huellas) {
             System.out.println("Huella ID: " + h.getId());
         }
 
-        // Buscar las huellas por ID de usuario
         System.out.println("===== BUSCANDO HUELLA POR ID DE USUARIO =====");
         List<Huella> huellasUsuario = huellaDAO.findByUserID(usuario);
         for (Huella h : huellasUsuario) {
             System.out.println("Huella ID: " + h.getId());
         }
 
-        // Actualizar huella
         System.out.println("===== ACTUALIZANDO HUELLA =====");
-        huella.setValor(BigDecimal.valueOf(15)); // Modificando el valor de la huella
+        huella.setValor(BigDecimal.valueOf(15));
         huellaDAO.updateHuella(huella);
         Huella updatedHuella = huellaDAO.findall().stream()
                 .filter(h -> h.getId() == huella.getId())
