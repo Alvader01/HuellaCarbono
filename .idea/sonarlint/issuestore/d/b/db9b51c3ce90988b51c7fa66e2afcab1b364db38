@@ -1,7 +1,7 @@
 
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(£íñƒÿÿÿÿÿ8÷ÛÿÍ2
-£
-java:S1186 "€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•‘İŸüÿÿÿÿ8…ÜÿÍ2
-
-java:S1186$"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(÷’²É8…ÜÿÍ2
-i	java:S100<"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğã/8ŒÜÿÍ2
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(£íñƒÿÿÿÿÿ8÷ÛÿÍ2J$00a7b761-1021-43de-8035-8dc81aae11d7
+É
+java:S1186 "€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•‘İŸüÿÿÿÿ8…ÜÿÍ2J$337491c0-bf5d-4537-bd82-950355b16f10
+Ä
+java:S1186$"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(÷’²É8…ÜÿÍ2J$f8ecc303-bcfb-4bb9-8644-ceee342631a8
+	java:S100<"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğã/8ŒÜÿÍ2J$8e28191c-2321-4054-ba33-4dcc3d71accc

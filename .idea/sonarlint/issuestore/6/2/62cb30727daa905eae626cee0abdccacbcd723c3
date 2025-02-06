@@ -1,17 +1,11 @@
 
-ˆ	java:S112İ"FDefine and throw a dedicated exception instead of using a generic one.(ï¸¶68¶šëÍ2J$1dbb6c1f-1f5e-49ae-9fb0-236900e928d2
-	java:S112‰"FDefine and throw a dedicated exception instead of using a generic one.(ˆô›âÿÿÿÿÿ8¶šëÍ2J$0e17b574-3804-4bd0-b749-43db02d572d3
-‰	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ì³¢8¶šëÍ2J$921a80d3-4bb7-404a-99a7-0616e9ead507
-¡
-java:S1192"XDefine a constant instead of duplicating this literal "Actividad no disponible" 4 times.(¥ÈÔüÿÿÿÿ8¸šëÍ2J$37cffa9d-af7c-4cc3-9635-88f74cb71e14
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(£íñƒÿÿÿÿÿ8½šëÍ2J$43ab0df0-4b0d-4bc3-bdbe-d5431ef5676d
+ˆ	java:S112ï"FDefine and throw a dedicated exception instead of using a generic one.(ï¸¶68§›øÔÍ2J$3b3c820d-b5e6-4e33-a859-48e694648717
+	java:S112™"FDefine and throw a dedicated exception instead of using a generic one.(ˆô›âÿÿÿÿÿ8¨›øÔÍ2J$8582ed9b-197d-448f-b6ee-66ac0ffa1c0b
+‰	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ì³¢8¨›øÔÍ2J$59025904-b7cc-4b6d-af38-6d14d9922881
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(£íñƒÿÿÿÿÿ8¬›øÔÍ2J$57558c1d-4d63-4457-8170-ebb36b7f5022
 Å
-java:S1186Û"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(È©Šş8€›ëÍ2J$5d4f13d2-981e-4616-8001-5058eaeea610
+java:S1186í"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(È©Šş8æ›øÔÍ2J$20c5bbcc-1e07-4933-a223-0fb3ad979539
 ¢
-java:S1171ª"YMove the contents of this initializer to a standard constructor or to field initializers.(ÒÌâ–øÿÿÿÿ8›ëÍ2J$c22949bc-d93a-45b2-b1fe-7c9da757a83c
-š
-java:S3457¦"Q%n should be used in place of \n to produce the platform-specific line separator.(ì«Úôùÿÿÿÿ8¡¢üÍ2J$52d11ef1-24c9-4fbe-8e81-43da3f32db49
-j
-java:S1128"HRemove this unused import 'com.github.alvader01.Entities.Recomendacion'.(‡¶ÌØüÿÿÿÿ8Ò‹ı‘Í2
-Z
-java:S1128""8Remove this unused import 'java.util.stream.Collectors'.(Óóº´úÿÿÿÿ8Ò‹ı‘Í2
+java:S1171¨"YMove the contents of this initializer to a standard constructor or to field initializers.(ÒÌâ–øÿÿÿÿ8ú›øÔÍ2J$37587a99-b0cc-47c1-a7aa-97971dfca639
+¢
+java:S1171¾"YMove the contents of this initializer to a standard constructor or to field initializers.(ÒÌâ–øÿÿÿÿ8ı›øÔÍ2J$767645d3-9457-4fb3-8e18-68af207432dc

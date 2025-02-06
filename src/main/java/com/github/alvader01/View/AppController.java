@@ -147,6 +147,17 @@ public class AppController extends Controller implements Initializable {
         alert.setContentText("Ya tienes una huella registrada para esta actividad en la misma fecha.");
         alert.showAndWait();
     }
+    public static void showErrorNoRecomendations() {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Recomendaciones");
+        alert.setHeaderText("No tienes huellas registradas");
+        alert.setContentText("Agrega alguna huella de carbono para recibir recomendaciones.");
+        alert.showAndWait();
+
+    }
+
+
+
 
 
 

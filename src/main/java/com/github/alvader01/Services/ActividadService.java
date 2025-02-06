@@ -30,8 +30,8 @@ public class ActividadService {
         List<Recomendacion> recomendaciones = actividadDAO.findRecommendationByActivityId(actividad.getId());
         StringBuilder recomendacionesText = new StringBuilder();
         for (Recomendacion recomendacion : recomendaciones) {
-            recomendacionesText.append("Descripción: ").append(recomendacion.getDescripcion()).append("\n");
-            recomendacionesText.append("Impacto Estimado: ").append(recomendacion.getImpactoEstimado()).append("\n\n");
+            recomendacionesText.append("Recomendacion: ").append(recomendacion.getDescripcion()).append("\n");
+            recomendacionesText.append("Impacto Estimado: ").append(recomendacion.getImpactoEstimado()).append("\n");
         }
         return recomendacionesText.toString();
     }

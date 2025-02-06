@@ -5,7 +5,6 @@ import com.github.alvader01.Connection.Session;
 import com.github.alvader01.Entities.Habito;
 import com.github.alvader01.Entities.Huella;
 import com.github.alvader01.Entities.Actividad;
-import com.github.alvader01.Entities.Recomendacion;
 import com.github.alvader01.Services.ActividadService;
 import com.github.alvader01.Services.HabitoService;
 import com.github.alvader01.Services.HuellaService;
@@ -19,12 +18,9 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.scene.image.ImageView;
 import javafx.scene.text.Text;
-import javafx.stage.FileChooser;
+
 import javafx.util.converter.IntegerStringConverter;
-import org.apache.pdfbox.pdmodel.PDDocument;
-import org.apache.pdfbox.pdmodel.PDPage;
-import org.apache.pdfbox.pdmodel.PDPageContentStream;
-import org.apache.pdfbox.pdmodel.font.PDType1Font;
+
 
 import java.io.*;
 import java.math.BigDecimal;
@@ -32,6 +28,9 @@ import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
 import java.util.stream.Collectors;
+
+import static com.github.alvader01.Utils.ExportCSV.exportToCSV;
+import static com.github.alvader01.Utils.ExportPDF.exportToPDF;
 
 public class MainPageController extends Controller implements Initializable {
 
@@ -87,7 +86,6 @@ public class MainPageController extends Controller implements Initializable {
         setupDeleteButton(deleteColumn, footprintTableView, footprintService);
     }
     public void exportFile() {
-
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         alert.setTitle("Seleccionar formato de exportación");
         alert.setHeaderText("Elige el formato para exportar:");
@@ -130,7 +128,7 @@ public class MainPageController extends Controller implements Initializable {
             refreshHabitTableData();
         });
 
-        setupDeleteButton(deleteHabitColumn, habitTableView, habitService);
+        setupDeleteButtonHabit(deleteHabitColumn, habitTableView, habitService);
     }
 
     private void refreshHabitTableData() {
@@ -172,12 +170,32 @@ public class MainPageController extends Controller implements Initializable {
                     T item = getTableView().getItems().get(getIndex());
                     if (service instanceof HuellaService) {
                         ((HuellaService) service).deleteHuella((Huella) item);
-                    } else if (service instanceof HabitoService) {
-                        ((HabitoService) service).deleteHabit((Habito) item);
                     }
                     tableView.getItems().remove(item);
                     refreshTableData();
                     setupPieChart();
+                });
+            }
+
+            @Override
+            protected void updateItem(Void item, boolean empty) {
+                super.updateItem(item, empty);
+                setGraphic(empty ? null : deleteButton);
+            }
+        });
+    }
+    private <T> void setupDeleteButtonHabit(TableColumn<T, Void> column, TableView<T> tableView, Object service) {
+        column.setCellFactory(param -> new javafx.scene.control.TableCell<>() {
+            private final Button deleteButton = new Button("Eliminar");
+            {
+                deleteButton.setOnAction(event -> {
+                    T item = getTableView().getItems().get(getIndex());
+                     if (service instanceof HabitoService) {
+                        ((HabitoService) service).deleteHabit((Habito) item);
+                    }
+                    tableView.getItems().remove(item);
+                    refreshTableData();
+
                 });
             }
 
@@ -223,29 +241,27 @@ public class MainPageController extends Controller implements Initializable {
     }
 
     public void showRecomendations() {
-        List<Actividad> activities = activityService.getAllActivities();
+        List<Huella> userFootprints = footprintService.findByUserID(Session.getInstance().getUserLoged());
 
-        if (activities.isEmpty()) {
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("Recomendaciones");
-            alert.setHeaderText("No tienes actividades registradas");
-            alert.setContentText("Realiza alguna actividad para recibir recomendaciones.");
-            alert.showAndWait();
+        if (userFootprints.isEmpty()) {
+            AppController.showErrorNoRecomendations();
             return;
         }
         StringBuilder recommendations = new StringBuilder();
-        for (Actividad activity : activities) {
+        for (Huella footprint : userFootprints) {
+            Actividad activity = activityService.getActivityById(footprint);
+            if (activity != null) {
+                String activityRecommendations = activityService.getRecommendationByActivity(activity);
 
-            String activityRecommendations = activityService.getRecommendationByActivity(activity);
-
-            if (activityRecommendations != null && !activityRecommendations.isEmpty()) {
-                recommendations.append("Actividad: ").append(activity.getNombre())
-                        .append("\n").append(activityRecommendations)
-                        .append("\n");
-            } else {
-                recommendations.append("Actividad: ").append(activity.getNombre())
-                        .append("\nNo hay recomendaciones disponibles.")
-                        .append("\n");
+                if (activityRecommendations != null && !activityRecommendations.isEmpty()) {
+                    recommendations.append("Actividad: ").append(activity.getNombre())
+                            .append("\n").append(activityRecommendations)
+                            .append("\n");
+                } else {
+                    recommendations.append("Actividad: ").append(activity.getNombre())
+                            .append("\nNo hay recomendaciones disponibles.")
+                            .append("\n");
+                }
             }
         }
 
@@ -276,95 +292,5 @@ public class MainPageController extends Controller implements Initializable {
     }
 
 
-    public void exportToCSV() {
-        List<Huella> footprints = footprintService.findByUserID(Session.getInstance().getUserLoged());
-
-        // Crear el archivo CSV
-        FileChooser fileChooser = new FileChooser();
-        fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("CSV Files", "*.csv"));
-        File file = fileChooser.showSaveDialog(null);
-
-        if (file != null) {
-            try (BufferedWriter writer = new BufferedWriter(new FileWriter(file))) {
-                writer.write("Fecha,Actividad,Valor,Unidad\n");
-
-                for (Huella footprint : footprints) {
-                    Actividad activity = activityService.getActivityById(footprint);
-                    String activityName = (activity != null) ? activity.getNombre() : "Actividad no disponible";
-                    writer.write(String.format("%s,%s,%s,%s\n", footprint.getFecha(), activityName, footprint.getValor(), footprint.getUnidad()));
-                }
-
-
-                Alert alert = new Alert(Alert.AlertType.INFORMATION);
-                alert.setTitle("Exportación Exitosa");
-                alert.setHeaderText("Huellas exportadas");
-                alert.setContentText("Las huellas se han exportado correctamente a CSV.");
-                alert.showAndWait();
-            } catch (IOException e) {
-                e.printStackTrace();
-                Alert alert = new Alert(Alert.AlertType.ERROR);
-                alert.setTitle("Error al Exportar");
-                alert.setContentText("Hubo un problema al exportar las huellas a CSV.");
-                alert.showAndWait();
-            }
-        }
-    }
-
-
-    public void exportToPDF() {
-        List<Huella> footprints = footprintService.findByUserID(Session.getInstance().getUserLoged());
-
-        FileChooser fileChooser = new FileChooser();
-        fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("PDF Files", "*.pdf"));
-        File file = fileChooser.showSaveDialog(null);
-
-        if (file != null) {
-            try (PDDocument document = new PDDocument()) {
-                PDPage page = new PDPage();
-                document.addPage(page);
-
-                try (PDPageContentStream contentStream = new PDPageContentStream(document, page)) {
-                    contentStream.setFont(PDType1Font.HELVETICA, 12);
-                    contentStream.beginText();
-                    contentStream.setLeading(14.5f);
-                    contentStream.newLineAtOffset(50, 750);
-
-                    contentStream.showText("Huellas de Carbono - Reporte PDF");
-                    contentStream.newLine();
-                    contentStream.showText("====================================");
-                    contentStream.newLine();
-
-                    for (Huella footprint : footprints) {
-                        Actividad activity = activityService.getActivityById(footprint);
-                        String activityName = (activity != null) ? activity.getNombre() : "Actividad no disponible";
-                        contentStream.showText(String.format("Fecha: %s", footprint.getFecha()));
-                        contentStream.newLine();
-                        contentStream.showText(String.format("Actividad: %s", activityName));
-                        contentStream.newLine();
-                        contentStream.showText(String.format("Valor: %s %s", footprint.getValor(), footprint.getUnidad()));
-                        contentStream.newLine();
-                        contentStream.showText("====================================");
-                        contentStream.newLine();
-                    }
-
-                    contentStream.endText();
-                }
-
-                document.save(file);
-
-                Alert alert = new Alert(Alert.AlertType.INFORMATION);
-                alert.setTitle("Exportación Exitosa");
-                alert.setHeaderText("Huellas exportadas");
-                alert.setContentText("Las huellas se han exportado correctamente a PDF.");
-                alert.showAndWait();
-            } catch (IOException e) {
-                e.printStackTrace();
-                Alert alert = new Alert(Alert.AlertType.ERROR);
-                alert.setTitle("Error al Exportar");
-                alert.setContentText("Hubo un problema al exportar las huellas a PDF.");
-                alert.showAndWait();
-            }
-        }
-    }
 
 }
