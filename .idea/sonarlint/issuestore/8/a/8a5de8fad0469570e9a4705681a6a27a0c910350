@@ -1,24 +1,24 @@
 
 §
-java:S1488A"kImmediately return this expression instead of assigning it to the temporary variable "actividadEncontrada".(ÚüöJ$8cf58081-5b3a-49ec-bcb1-af272d4aeb5b
-•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÙÆ¯ËJ$1aa40059-e253-435d-aa7c-b442ff85ae6c
+java:S1488="kImmediately return this expression instead of assigning it to the temporary variable "actividadEncontrada".(ÚüöJ$738a17d2-b02d-4035-9a1f-bc055b40dcce
+•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÙÆ¯ËJ$c561c3f5-40a3-4faa-9c8f-2f3d2005be86
 
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ùÉÑîJ$91131314-873d-4d35-b138-544d9e4d5f75
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ùÉÑîJ$c7d2db0a-e3ce-47b2-828d-474e41b62615
 †
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(‰à®¬ıÿÿÿÿJ$7e1b96b0-b033-472c-9571-4eb3b72daf1c
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(‰à®¬ıÿÿÿÿJ$b5e74e81-d280-4eca-9c1e-9de942b68ba5
 †
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(Ñí¯üÿÿÿÿJ$29f6c072-1426-4f0f-9c7c-2a6e6e7da944
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(Ñí¯üÿÿÿÿJ$82b8e6f6-d1f3-4ce0-a618-823f023a23cf
 †
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ŒÈªóıÿÿÿÿJ$855d7c06-8a17-4050-ac28-62be3909ccc6
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ŒÈªóıÿÿÿÿJ$4623956d-74e7-4bf7-9c6d-7b2ee81f9b70
 ˆ
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ÈŞ¢—8Êé±Í2J$08e642ba-a306-43b3-ab4b-dbef1514241d
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ÈŞ¢—8Êé±Í2J$a9efb491-dbda-444f-9701-1304da1e01c0
 t
-java:S1874!"3Remove this use of "createQuery"; it is deprecated.(˜¨´ÚşÿÿÿÿJ$a7ebd66b-e63c-4c0b-8fc6-87b6a3dcafe7
+java:S1874"3Remove this use of "createQuery"; it is deprecated.(˜¨´ÚşÿÿÿÿJ$1e8690d4-189b-453d-82c6-040cf7f0bff5
 v
-java:S1874,"3Remove this use of "createQuery"; it is deprecated.(ŞÃå°8ò¨³Í2J$449752b1-a069-485d-9019-ad24579ddcff
+java:S1874("3Remove this use of "createQuery"; it is deprecated.(ŞÃå°8ò¨³Í2J$2be0a4fd-7389-4c83-8023-10f56aa76372
 v
-java:S18746"3Remove this use of "createQuery"; it is deprecated.(»¡­Â8½øàÍ2J$15997c5a-0621-4319-a9df-3fadd68c7e4b
+java:S18742"3Remove this use of "createQuery"; it is deprecated.(»¡­Â8½øàÍ2J$ecc5aa14-791a-4797-9e03-17099e7adb97
 v
-java:S1874?"3Remove this use of "createQuery"; it is deprecated.(‚«”Å8ÍöâÍ2J$0a4552a0-6f6e-4525-a0b4-0ccc95ba756b
+java:S1874;"3Remove this use of "createQuery"; it is deprecated.(‚«”Å8ÍöâÍ2J$1d87f710-757d-442b-87b9-bbc385709f32
 {
-java:S1874H"3Remove this use of "createQuery"; it is deprecated.(ß¤Š¤üÿÿÿÿ8—¯óÍ2J$c997deb3-96f8-47b2-a320-e8d41ac06d34
+java:S1874D"3Remove this use of "createQuery"; it is deprecated.(ß¤Š¤üÿÿÿÿ8—¯óÍ2J$d44fe410-ed8a-4c87-8dc3-13243dd05372

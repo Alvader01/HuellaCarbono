@@ -1,18 +1,18 @@
 
 ˜
-java:S1488O"\Immediately return this expression instead of assigning it to the temporary variable "user".(ÓÌÆçJ$53f8242b-3292-48bf-8dbf-9b228c2592f0
-•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÙÆ¯ËJ$6f282942-8cba-45ac-a0a2-db2e1669021b
+java:S1488O"\Immediately return this expression instead of assigning it to the temporary variable "user".(ÓÌÆçJ$89c5b4c9-fe49-4c41-b34c-90351cc9e972
+•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÙÆ¯ËJ$6da86866-be84-45cd-9b63-c10187b69a94
 
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(²§Û J$ea29e2bd-5587-4444-8244-295b81a17673
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(²§Û J$19773efc-ece2-4e60-b747-43ff22293c08
 †
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(å £ÓûÿÿÿÿJ$d976d57d-77ba-4be8-8b39-a8b132f473e3
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(å £ÓûÿÿÿÿJ$1046bc86-0378-498f-9fb6-1753f85eb045
 
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(³ƒ‘ğJ$c4df0813-9ff2-48f5-9d8c-289882410b44
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(³ƒ‘ğJ$48df7250-555e-4061-b6de-badaf11bb520
 t
-java:S1874 "3Remove this use of "createQuery"; it is deprecated.(áò±ÛüÿÿÿÿJ$c906fca4-2cb6-44df-b024-7d54a6728548
+java:S1874 "3Remove this use of "createQuery"; it is deprecated.(áò±ÛüÿÿÿÿJ$2fb7b285-c476-4762-88e5-92cdebcf18dd
 j
-java:S1874.".Remove this use of "update"; it is deprecated.(±¯ğêJ$5b8e5bdb-82a8-4c9f-b8c9-b1d50fc1f135
+java:S1874.".Remove this use of "update"; it is deprecated.(±¯ğêJ$92c4b22e-e16c-4d0e-b32a-de1b88c4ada3
 o
-java:S1874A"3Remove this use of "createQuery"; it is deprecated.(ˆùôÏJ$24a8db06-3e02-4a71-81f2-d423e61ac130
+java:S1874A"3Remove this use of "createQuery"; it is deprecated.(ˆùôÏJ$662383fa-cb4c-4f43-b6fb-84fb42b3e4d4
 o
-java:S1874L"3Remove this use of "createQuery"; it is deprecated.(êÉ©ÂJ$4fd0f8fa-a528-4d5b-b031-8a7eb717cf8b
+java:S1874L"3Remove this use of "createQuery"; it is deprecated.(êÉ©ÂJ$a62dd701-5a4d-4553-8dd0-343c1454389e

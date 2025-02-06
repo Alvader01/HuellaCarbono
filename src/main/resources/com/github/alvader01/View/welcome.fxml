@@ -47,7 +47,7 @@
       </Text>
       <ImageView fitHeight="703.0" fitWidth="1207.0" layoutX="249.0" layoutY="8.0">
          <image>
-            <Image url="@Images/logo%20huella.png" />
+            <Image url="@Images/logohuella.png" />
          </image>
       </ImageView>
       <Text layoutX="31.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cada pequeña acción cuenta. Descubre cómo reducir tu impacto ambiental con consejos personalizados para tu día a día. Aprende a optimizar tu consumo de energía, elegir opciones más ecológicas y gestionar mejor tus residuos. Juntos, podemos construir un futuro más verde." wrappingWidth="438.268798828125">

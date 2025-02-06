@@ -52,7 +52,7 @@
       </PasswordField>
       <ImageView fitHeight="154.0" fitWidth="256.0" layoutX="522.0" layoutY="439.0">
          <image>
-            <Image url="@Images/logo%20huella.png" />
+            <Image url="@Images/logohuella.png" />
          </image>
       </ImageView>
       <Text layoutX="503.0" layoutY="645.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pequeños cambios generan grandes impactos. Únete al cambio." textAlignment="CENTER" wrappingWidth="293.9779357910156">

@@ -37,7 +37,7 @@
       </Rectangle>
       <ImageView fitHeight="154.0" fitWidth="256.0" layoutX="522.0" layoutY="509.0">
          <image>
-            <Image url="@Images/logo%20huella.png" />
+            <Image url="@Images/logohuella.png" />
          </image>
       </ImageView>
       <Text layoutX="507.0" layoutY="682.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pequeños cambios generan grandes impactos. Únete al cambio." textAlignment="CENTER" wrappingWidth="293.9779357910156">

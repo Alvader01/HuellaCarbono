@@ -1,28 +1,28 @@
 
 r
-java:S3740"/Provide the parametrized type for this generic.(“–ÌË8ıâŒ‘Í2J$e5bc452f-d345-4f2b-9cf7-dd8e01b2fc68
+java:S3740"/Provide the parametrized type for this generic.(“–ÌË8ıâŒ‘Í2J$df321ef1-d3da-41c1-b889-286f737a8351
 w
-java:S3740!"/Provide the parametrized type for this generic.(¡¢ äùÿÿÿÿ8ÿâŒ‘Í2J$2dc6f9d0-9096-4946-b857-149ca3e7b516
+java:S3740!"/Provide the parametrized type for this generic.(¡¢ äùÿÿÿÿ8ÿâŒ‘Í2J$caf9033a-a158-4c4a-8232-88bae8d490be
 r
-java:S3740A"/Provide the parametrized type for this generic.(»¡­Â8ÿâŒ‘Í2J$aff86838-8010-486c-ad77-09106d9a23ba
+java:S3740A"/Provide the parametrized type for this generic.(»¡­Â8ÿâŒ‘Í2J$b8eb0590-774e-47cd-9483-34fc9c4ecd4b
 r
-java:S3740K"/Provide the parametrized type for this generic.(ªì¬¢8ÿâŒ‘Í2J$1c1dabc1-32e7-4558-8083-dda2a79f2221
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÙÆ¯Ë8€ãŒ‘Í2J$748709fc-b469-4ad6-acd6-a2fe02e567e0
+java:S3740K"/Provide the parametrized type for this generic.(ªì¬¢8ÿâŒ‘Í2J$e819d584-0eb3-45c1-8e1a-3fc42ea5659a
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÙÆ¯Ë8€ãŒ‘Í2J$863a4ca6-88ad-4222-a953-fc6f28bda9f9
 ›
-java:S1845>"SRename method "findAll" to prevent any misunderstanding/clash with field "FINDALL".(â¤Ğ¦ÿÿÿÿÿ8”ãŒ‘Í2J$0c72d099-38a4-43e8-8a65-9970637e5f44
+java:S1845>"SRename method "findAll" to prevent any misunderstanding/clash with field "FINDALL".(â¤Ğ¦ÿÿÿÿÿ8”ãŒ‘Í2J$6a81d143-3f6e-4206-9db9-e2d965774bd0
 œ
-java:S1845H"YRename method "findByUser" to prevent any misunderstanding/clash with field "FINDBYUSER".(©Ù–ª8”ãŒ‘Í2J$f8e7fc86-2468-4b61-8707-71f3acd7e0d5
+java:S1845H"YRename method "findByUser" to prevent any misunderstanding/clash with field "FINDBYUSER".(©Ù–ª8”ãŒ‘Í2J$2371fb8d-ff56-4237-88bf-752d37d2f6ed
 v
-java:S1874"3Remove this use of "createQuery"; it is deprecated.(“–ÌË8šãŒ‘Í2J$c85a3f6b-f8b5-42a2-ad7f-1e34ceb99baa
+java:S1874"3Remove this use of "createQuery"; it is deprecated.(“–ÌË8šãŒ‘Í2J$f71bcce8-d3aa-4876-b389-e7332e0e51cf
 {
-java:S1874!"3Remove this use of "createQuery"; it is deprecated.(¡¢ äùÿÿÿÿ8ãŒ‘Í2J$d385c2f2-bd17-428a-a096-dd5b1be6e3e3
+java:S1874!"3Remove this use of "createQuery"; it is deprecated.(¡¢ äùÿÿÿÿ8ãŒ‘Í2J$90452a3a-233f-40e5-87e6-4224717fce36
 o
-java:S1874.",Remove this use of "save"; it is deprecated.(â’öÈ8ŸãŒ‘Í2J$80cd6ef0-0e79-4115-8570-2c755935a0b2
+java:S1874.",Remove this use of "save"; it is deprecated.(â’öÈ8ŸãŒ‘Í2J$03ff1108-1fe9-4a2c-ad12-03119c5fc8a7
 v
-java:S18748".Remove this use of "update"; it is deprecated.(‹¤¹’ıÿÿÿÿ8 ãŒ‘Í2J$0868eb04-ccc3-47cd-b45a-f9a77da0e598
+java:S18748".Remove this use of "update"; it is deprecated.(‹¤¹’ıÿÿÿÿ8 ãŒ‘Í2J$4389255e-7d2d-4242-adfd-c5587f7f2e04
 v
-java:S1874A"3Remove this use of "createQuery"; it is deprecated.(»¡­Â8¡ãŒ‘Í2J$c15df310-2b54-4490-9f73-c7eae366711c
+java:S1874A"3Remove this use of "createQuery"; it is deprecated.(»¡­Â8¡ãŒ‘Í2J$7c22bd6b-8190-4ace-8f22-b29f9453944a
 v
-java:S1874K"3Remove this use of "createQuery"; it is deprecated.(ªì¬¢8¢ãŒ‘Í2J$1a175de5-a1d1-4ee6-b990-1c8f64907ba4
+java:S1874K"3Remove this use of "createQuery"; it is deprecated.(ªì¬¢8¢ãŒ‘Í2J$34b8d000-c8b2-46e3-b051-080bf9346f40
 q
-java:S1874W".Remove this use of "delete"; it is deprecated.(˜Íú¥8£ãŒ‘Í2J$d8663d5b-6076-49d2-bd97-1be6f51565d6
+java:S1874W".Remove this use of "delete"; it is deprecated.(˜Íú¥8£ãŒ‘Í2J$d964e4cf-4d03-4ae9-b9a5-4f5ca4e51144

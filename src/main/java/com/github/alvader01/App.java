@@ -5,6 +5,7 @@ import com.github.alvader01.View.Scenes;
 import com.github.alvader01.View.View;
 import javafx.application.Application;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 
@@ -27,8 +28,11 @@ public class App extends Application {
         scene = new Scene(view.scene, 1280, 720);
         currentController = (AppController) view.controller;
         currentController.onOpen(null);
+        stage.setTitle("HuellaCarbono");
+        stage.getIcons().add(new Image(App.class.getResourceAsStream("View/Images/logohuella.png")));
         stage.setScene(scene);
         stage.show();
+
     }
 
 

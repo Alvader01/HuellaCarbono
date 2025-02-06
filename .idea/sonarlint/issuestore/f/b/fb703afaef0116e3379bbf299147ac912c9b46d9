@@ -1,16 +1,16 @@
 
-L
-java:S37401"/Provide the parametrized type for this generic.(ç¾ÝÙ8®ú±‘Í2
-Q
-java:S3740:"/Provide the parametrized type for this generic.(¡¢ äùÿÿÿÿ8®ú±‘Í2
-L
-java:S3740F"/Provide the parametrized type for this generic.(»¡­Â8®ú±‘Í2
-v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÙÆ¯Ë8°ú±‘Í2
-P
-java:S1874".Remove this use of "delete"; it is deprecated.(á·à´þÿÿÿÿ8Àú±‘Í2
-P
-java:S18741"3Remove this use of "createQuery"; it is deprecated.(ç¾ÝÙ8Âú±‘Í2
-U
-java:S1874:"3Remove this use of "createQuery"; it is deprecated.(¡¢ äùÿÿÿÿ8Ãú±‘Í2
-P
-java:S1874F"3Remove this use of "createQuery"; it is deprecated.(»¡­Â8Ãú±‘Í2
+r
+java:S37401"/Provide the parametrized type for this generic.(ç¾ÝÙ8®ú±‘Í2J$c0b34c2b-2f5b-45f0-ab9d-60504cf9b03d
+w
+java:S3740:"/Provide the parametrized type for this generic.(¡¢ äùÿÿÿÿ8®ú±‘Í2J$92651657-89c8-414a-baf8-6bc17953618f
+r
+java:S3740F"/Provide the parametrized type for this generic.(»¡­Â8®ú±‘Í2J$363f3aa8-039d-4ccf-8e89-43d31fcd8c6d
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÙÆ¯Ë8°ú±‘Í2J$0c7a864d-fb55-442a-ae1f-d199faeb9df7
+v
+java:S1874".Remove this use of "delete"; it is deprecated.(á·à´þÿÿÿÿ8Àú±‘Í2J$7e7de5b7-43dd-4ace-8976-0c817321a41f
+v
+java:S18741"3Remove this use of "createQuery"; it is deprecated.(ç¾ÝÙ8Âú±‘Í2J$c689a4c4-f9e5-4ab5-8f78-b8646e5cf51b
+{
+java:S1874:"3Remove this use of "createQuery"; it is deprecated.(¡¢ äùÿÿÿÿ8Ãú±‘Í2J$c9672df4-dbd0-4e23-bf1c-518e17747074
+v
+java:S1874F"3Remove this use of "createQuery"; it is deprecated.(»¡­Â8Ãú±‘Í2J$886fc0f1-929e-4d54-9332-f41d27713ea9
